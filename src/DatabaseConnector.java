@@ -1,31 +1,3 @@
-//import java.sql.*;
-//
-//public class DatabaseConnector {
-//    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/point";
-//    private static final String USERNAME = "root";
-//    private static final String PASSWORD = "root";
-//
-//    public static Connection getConnection() throws SQLException {
-//        return DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
-//    }
-//
-//    public static void main(String[] args) {
-//        try (Connection conn = getConnection()) {
-//            System.out.println("Connected to the database");
-//
-//            // Example: Retrieving products
-//            Statement statement = conn.createStatement();
-//            ResultSet resultSet = statement.executeQuery("SELECT * FROM products");
-//            while (resultSet.next()) {
-//                System.out.println(resultSet.getString("name") + ", $" + resultSet.getDouble("price"));
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//}
-
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
